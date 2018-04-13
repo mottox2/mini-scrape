@@ -1,5 +1,5 @@
-const request = require('request')
-const { JSDOM } = require('jsdom')
+import request from 'request'
+import { JSDOM } from 'jsdom';
 
 const fetchBody = (url) => {
   return new Promise((resolve, reject) => {
