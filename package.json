@@ -1,13 +1,13 @@
 {
   "name": "mini-scrape",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple scrape function working only nodejs",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist"
   },
   "keywords": [],
-  "author": "@mottox2",
+  "author": "mottox2",
   "license": "MIT",
   "dependencies": {
     "jsdom": "^11.7.0",
