@@ -1,5 +1,7 @@
 # mini-scrape
 
+[![npm version](https://badge.fury.io/js/mini-scrape.svg)](https://badge.fury.io/js/mini-scrape)
+
 simple scrape function working only nodejs
 
 ## Installation
