@@ -13,14 +13,16 @@ const fetchBody = (url) => {
   })
 }
 
-const scrape = (async (url, callback) => {
-  try {
-    const body = await fetchBody(url)
-    const dom = new JSDOM(body)
-    callback(dom.window)
-  } catch(error) {
-    console.error(error)
-  }
+const scrape = ((url) => {
+  return new Promiss(async (resolve, reject) => {
+    try {
+      const body = await fetchBody(url)
+      const dom = new JSDOM(body)
+      resolve(dom.window)
+    } catch(error) {
+      reject(error)
+    }
+  })
 })
 
 module.exports = scrape

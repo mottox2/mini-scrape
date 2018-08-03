@@ -22,7 +22,7 @@ $ yarn install mini-scrape
 const scrape = require('mini-scrape')
 const url = 'https://github.com/mottox2/mini-scrape'
 
-scrape(url, function(window) {
+scrape(url).then(window => {
   console.log('title: ', window.document.title)
   console.log('h1: ', window.document.querySelector('h1').textContent.replace(/\n/g, ''))
 })
@@ -34,7 +34,7 @@ scrape(url, function(window) {
 import scrape from 'mini-scrape'
 const url = 'https://github.com/mottox2/mini-scrape'
 
-scrape(url, window => {
+scrape(url).then(window => {
   console.log('title: ', window.document.title)
   console.log('h1: ', window.document.querySelector('h1').textContent.replace(/\n/g, ''))
 })
