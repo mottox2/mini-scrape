@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/mini-scrape.svg)](https://badge.fury.io/js/mini-scrape)
 
-simple scrape function working only nodejs
+simple scrape function working on nodejs
 
 ## Installation
 
