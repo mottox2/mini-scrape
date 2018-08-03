@@ -39,3 +39,19 @@ scrape(url).then(window => {
   console.log('h1: ', window.document.querySelector('h1').textContent.replace(/\n/g, ''))
 })
 ```
+
+with headers
+
+```js
+import scrape from 'mini-scrape'
+const url = 'https://github.com/mottox2/mini-scrape'
+
+scrape(url, {
+  headers: {
+    'User-Agent': 'mini-scrape'
+  }
+}).then(window => {
+  console.log('title: ', window.document.title)
+  console.log('h1: ', window.document.querySelector('h1').textContent.replace(/\n/g, ''))
+})
+```
