@@ -19,9 +19,9 @@
     "request": "^2.85.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.55",
-    "@babel/core": "^7.0.0-beta.55",
-    "@babel/preset-env": "^7.0.0-beta.55"
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1"
   },
   "homepage": "https://github.com/mottox2/mini-scrape"
 }
